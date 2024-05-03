@@ -1,6 +1,7 @@
 :root{
     --whiteColor: white;
     --backColor: #151617;
+    --mainColor: #E4D5BD;
 
     // sizing
     --xs-sizing: 8px;
@@ -9,6 +10,9 @@
     --l-sizing: 32px;
     --xl-sizing: 64px;
     --xxl-sizing: 120px;
+
+    // padding
+    --mainPadding: 16px;
 }
 
 *{
@@ -16,8 +20,50 @@
     margin: 0;
     box-sizing: border-box;
 }
+::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #151617; /* Color of the scrollbar track */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+  }
 
-
+@font-face {
+    font-family: 'Fjord One';
+    src: url('./fonts/FjordOne-Regular.ttf');
+}
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Fjord One';
+    margin: 0;
+    padding: 0;
+    background-color: var(--backColor);
+    
+}
+
+a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+    margin: 10px;
+}
+
+.LeftLink {
+    margin-right: auto;
+}
+
+h1{
+    font-size: 89px;
+    margin: 0;
+}
+
+.heroVid{
+    background-image: url('./../assets/images/hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
 }

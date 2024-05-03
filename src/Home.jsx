@@ -1,8 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import Header from "./components/Header";
+import Hero from "./sections/Hero";
+import Video from "./sections/Video";
+import Studio from "./sections/Studio";
 
-const Homestyle = styled.div`
+const HomeStyle = styled.div`
   width: 100vw;
   height: 100vh;
   background-color: var(--backColor);
@@ -10,9 +12,11 @@ const Homestyle = styled.div`
 
 function Home() {
   return (
-    <Homestyle>
-      <h1>Hello world</h1>
-    </Homestyle>
+    <HomeStyle>
+      <Hero />
+      <Video />
+      <Studio />
+    </HomeStyle>
   );
 }
 

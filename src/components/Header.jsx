@@ -1,16 +1,28 @@
 import React from 'react';
 import styled from "styled-components";
 
-const Headerstyle = styled.div`
-  width: 100vw;
-  height: 30px;
-  background-color: white;
+const HeaderStyle = styled.div`
+  width: 100%;
+  padding: 10px;
+  position: absolute;
+  align-items: center;
+  top: 0;
+  gap: 32px;
+  display:flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #F1EDE4;
+
+
 `;
 function Header(props) {
     return (
-        <Headerstyle>
-            
-        </Headerstyle>
+        <HeaderStyle>
+            <a className="LeftLink" href='/'>Ambiance Studio</a> 
+            <a href='/'>Work</a> 
+            <a href='/'>About</a> 
+            <a href='/'>Contact</a> 
+
+        </HeaderStyle>
     );
 }
 
