@@ -1,18 +1,18 @@
 import React from "react";
 import styled from "styled-components";
+import Header from "./components/Header";
 
-const StyledHome = styled.div`
+const Homestyle = styled.div`
   width: 100vw;
   height: 100vh;
-  background-color: #f0f0f0;
+  background-color: var(--backColor);
 `;
 
 function Home() {
   return (
-    <StyledHome>
+    <Homestyle>
       <h1>Hello world</h1>
-      <p>Template by la bronze en back</p>
-    </StyledHome>
+    </Homestyle>
   );
 }
 
