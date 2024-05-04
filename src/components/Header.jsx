@@ -2,11 +2,9 @@ import React from 'react';
 import styled from "styled-components";
 
 const HeaderStyle = styled.div`
-  width: 100%;
   padding: 10px;
-  position: absolute;
   align-items: center;
-  top: 0;
+  top: 0px;
   gap: 32px;
   display:flex;
   justify-content: space-between;
