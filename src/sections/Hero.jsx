@@ -13,9 +13,11 @@ const HeroStyle = styled.div`
     }
 
     p {
-        width: 30%;
-        margin-right: 30px; 
-        margin-top: 3%;
+        width: 70%;
+        float: right; 
+        margin-left: 56%;
+        margin-top:-4%;
+        font-size: 24px;
     }
 
 `;
@@ -23,7 +25,8 @@ const HeroStyle = styled.div`
 function Hero(props) {
     return (
         <HeroStyle>
-            <h1>Elevate Your Space with <br /> Expert Design</h1>
+            <h1>Elevate Your Space with </h1>
+            <h1>Expert Design</h1>
             <p>We specialize in transforming spaces and inspiring lives. With a passion for design and a commitment to excellence, we craft homes that reflect the unique personalities and lifestyles of our clients.</p>    
         </HeroStyle>
     );
