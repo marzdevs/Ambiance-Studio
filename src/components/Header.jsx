@@ -19,7 +19,6 @@ function Header(props) {
             <a href='/'>Work</a> 
             <a href='/'>About</a> 
             <a href='/'>Contact</a> 
-
         </HeaderStyle>
     );
 }
