@@ -9,6 +9,7 @@ const StudioStyle = styled.div`
         display: flex;
         align-items: center;
         margin-bottom: 20px;
+        margin-left:40px;
     }
 
     .roomView {
