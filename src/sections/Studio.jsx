@@ -4,18 +4,18 @@ import roomView from './../assets/images/interior-2.jpg';
 
 const StudioStyle = styled.div`
     position: relative;
-
+    
     .studioContent {
         display: flex;
         align-items: center;
         margin-bottom: 20px;
-        margin-left:40px;
+        margin-left: 150px;
     }
 
     .roomView {
         flex: 1;
         margin-top: 20%;
-        margin-left: -22%;
+        margin-right: 15%;
     }
 
     img {
@@ -26,6 +26,7 @@ const StudioStyle = styled.div`
     .textContainer {
         flex: 1;
         position: relative;
+        margin-left: 40px; /* Add left margin */
     }
 
     h1, h2, p {
@@ -37,8 +38,8 @@ const StudioStyle = styled.div`
         font-size: 128px;
         position: absolute;
         top: 0%;
-        left: 23%;
-        transform: translateY(-280%);
+        left: 26%;
+        transform: translateY(-250%);
         z-index: 1;
     }
 
@@ -46,7 +47,7 @@ const StudioStyle = styled.div`
         font-size: 128px;
         position: absolute;
         top: 0;
-        left: 50%;
+        left: 75%;
         transform: translate(-6%, -140%);
         margin-top: 20px;
     }
@@ -66,24 +67,24 @@ const StudioStyle = styled.div`
     .firstP {
         position: absolute;
         font-size: 24px;
-        left: 23%;
-        margin-top: 80px;
-        width: 35%;
+        left: 24%;
+        margin-top: 5%;
+        width: 65%;
     }
 
     .secondP {
         position: absolute;
         font-size: 24px;
-        background-color:#151617;
+        background-color: #151617;
         color: var(--mainColor);
         padding: 20px;
-        width: 60%;
-        margin-top: 53%;
-        left: 20%;
+        width: 110%;
+        margin-top: 66%;
+        left: 21%;
     }
 
     button {
-        padding: 20px 50px;
+        padding: 20px 75px;
         font-size: 25px;
         background-color: var(--mainColor);
         color: var(--backColor);
@@ -91,8 +92,8 @@ const StudioStyle = styled.div`
         border-radius: 10px;
         cursor: pointer;
         position: absolute;
-        top: calc(370px + 40px);
-        left: 23%;
+        top: calc(280px + 40px);
+        left: 24%;
     }
 `;
 
