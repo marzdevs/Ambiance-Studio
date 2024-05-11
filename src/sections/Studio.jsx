@@ -15,7 +15,7 @@ const StudioStyle = styled.div`
     .roomView {
         flex: 1;
         margin-top: 20%;
-        margin-right: 15%;
+        margin-right: 15%;   
     }
 
     img {
