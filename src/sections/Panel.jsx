@@ -5,7 +5,7 @@ import mask2 from './../assets/images/mask2.jpg'
 import mask3 from './../assets/images/mask3.jpg'
 
 const PanelStyle = styled.div`
-    margin-top: 38%;
+    margin-top: 28%;
     padding: 20px;
     color: var(--whiteColor);
     display: flex;
