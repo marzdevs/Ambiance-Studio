@@ -14,4 +14,4 @@
 ![ambiance 3](https://github.com/marzdevs/Ambiance-Studio/assets/18634603/b9a44135-f0de-4854-93cc-b03c98f32ae9)
 
 #Footer Section
-![ambiance5](https://github.com/marzdevs/Ambiance-Studio/assets/18634603/0244b59b-c0cd-4ac9-b10e-53d872c69fb5)
+![aklsjdghasdg](https://github.com/marzdevs/Ambiance-Studio/assets/18634603/7f0c28e8-f733-4e14-bf9a-8a91b31d6bd5)
