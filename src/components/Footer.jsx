@@ -12,7 +12,7 @@ top: 80px;
 h1 {
     position: absolute;
     bottom: 0;
-    left: 24%;
+    left: 21%;
     transform: translateY(10%);
     color: var(--mainColor);
     font-size: 180px;
