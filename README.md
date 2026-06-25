@@ -1,4 +1,4 @@
-Ambiance Studio
+# Ambiance Studio
 A modern, high-end agency website built to showcase interior design concepts. This project focuses on immersive UI/UX, responsive design, and smooth transitions.
 
 ([Live Demo](https://ambiancestudio.netlify.app/))
