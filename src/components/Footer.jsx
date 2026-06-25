@@ -4,85 +4,103 @@ import footer from './../assets/images/footer.jpg';
 
 const Container = styled.div`
   min-height: 80vh; 
-  margin-top: 80px;
+  margin-top: 0;
+  padding-top: 40px; /* Reduced slightly to give the top columns more room */
   border-bottom: 7px solid #ccc;
+  
+  /* --- THE SHIELD FIXES --- */
   position: relative;
+  z-index: 10; /* Forces the entire footer layer to stack cleanly on top of any leaking elements */
+  background-color: #151617; /* Solid backdrop fill to completely mask out hidden text underneath */
+  clear: both; /* Clear any rogue floats from the panels above */
+  box-sizing: border-box;
   
   background: 
-    linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0) 100%),
+    linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(15, 16, 17, 1) 100%), /* Fades into a solid background color at the top edge */
     url(${footer}) no-repeat center center;
   background-size: cover;
+  
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  
-  /* CHANGE THIS: Spreads the contact box to the top and the row to the bottom */
-  justify-content: space-between; 
+  justify-content: space-between;
 
-  .contact {
-    /* REMOVE position: absolute, top, and right */
-    align-self: flex-end; /* Pushes it to the right side */
-    margin-top: 2rem;
-    margin-right: 2rem;
-    
-    color: var(--mainColor);
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(4px);
-    padding: 10px 20px;
-    border-radius: 4px;
+  /* --- UPGRADED HIGH-END CONTACT BLOCK CONTAINER --- */
+  .footer-info-row {
+    align-self: flex-end; 
+    margin-top: 3rem;
+    margin-right: 40px;
+    display: flex;
+    gap: 60px;
+    background: rgba(21, 22, 23, 0.65);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 30px 40px;
+    border-radius: 6px;
+    border: 1px solid rgba(241, 237, 228, 0.1);
     z-index: 2;
-    
+  }
+
+  .info-block {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
     h3 {
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin: 0 0 4px 0;
+      color: var(--mainColor);
+      opacity: 0.5;
+    }
+
+    a, p {
+      color: var(--mainColor);
+      text-decoration: none;
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
       margin: 0;
-      font-size: 20px;
-      font-weight: 500;
+      line-height: 1.5;
+      transition: opacity 0.2s ease;
+    }
+
+    a:hover {
+      opacity: 0.7;
     }
   }
+
   .footer-bottom-row {
     width: 100%;
     box-sizing: border-box;
-    padding: 0 5% 3rem 5%; 
+    padding: 0 40px 3rem 40px; 
     display: flex;
     align-items: flex-end; 
     justify-content: space-between; 
     gap: 24px; 
-
-    /* THIS FIXES MOBILE STACKING */
-    @media (max-width: 768px) {
-      flex-direction: column;   /* Stacks everything in a neat vertical line */
-      align-items: flex-start;  /* Aligns text flush to the left */
-      gap: 32px;                /* Adds healthy space between the stacked items */
-      padding: 0 5% 2rem 5%;
-      
-      /* If your lorem ipsum blocks are inside nested divs, */
-      /* this ensures they take up full width when stacked */
-      > div {
-        width: 100%;
-      }
-    }
+    z-index: 2;
   }
 
   h1 {
     margin: 0;
     color: var(--mainColor);
-    font-size: clamp(2.5rem, 7vw, 120px); 
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5rem, 6vw, 100px); 
     white-space: nowrap;
     line-height: 0.9; 
+    font-weight: 400;
   }
 
   .svgs {
     display: flex;
     gap: 16px; 
     padding-bottom: 12px; 
-
-    @media (max-width: 768px) {
-      padding-bottom: 0; 
-    }
   }
 
   .svgs svg {
-    width: 32px;
-    height: 32px;
+    width: 28px;
+    height: 28px;
     cursor: pointer;
     transition: transform 0.2s ease, opacity 0.2s ease;
 
@@ -95,17 +113,53 @@ const Container = styled.div`
       opacity: 0.85;
     }
   }
+
+  /* --- RESPONSIVE MOBILE STACKING --- */
+  @media (max-width: 768px) {
+    min-height: auto;
+    padding-bottom: 20px;
+
+    .footer-info-row {
+      align-self: flex-start;
+      margin-left: 24px;
+      margin-right: 24px;
+      flex-direction: column;
+      gap: 24px;
+      width: calc(100% - 48px);
+      box-sizing: border-box;
+      padding: 24px;
+    }
+
+    .footer-bottom-row {
+      flex-direction: column;   
+      align-items: flex-start;  
+      gap: 32px;                
+      padding: 40px 24px 20px 24px;
+    }
+
+    .svgs {
+      padding-bottom: 0; 
+    }
+  }
 `;
 
 function Footer() {
   return (
     <Container>
-        {/* Contact info stays pinned cleanly up top */}
-        <div className='contact'>
-            <h3>contact us here: address</h3>
+        {/* Contact links row styled beautifully with clear segments */}
+        <div className="footer-info-row">
+            <div className="info-block">
+                <h3>Inquiries</h3>
+                <a href="mailto:hello@ambiancestudio.com">hello@ambiancestudio.com</a>
+            </div>
+
+        <div className="info-block">
+            <h3>Studio Location</h3>
+            <p>The Atelier, No. 42 Gallerist Row<br />By Design Appointment Only</p>
+        </div>
         </div>
 
-        {/* Both text and social items track perfectly together along the baseline */}
+        {/* Text logo and social icons aligned along the bottom baseline */}
         <div className="footer-bottom-row">
             <h1>Ambiance Studio<span style={{ color: 'white' }}>.</span></h1>
             

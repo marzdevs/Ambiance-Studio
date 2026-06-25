@@ -3,29 +3,41 @@ import styled from "styled-components";
 import roomView from './../assets/images/interior-2.jpg';
 
 const StudioStyle = styled.div`
-    position: relative;
+    /* balanced viewport footprint—keeps it a hero without the massive gaps */
+    min-height: 85vh;
     width: 100%;
-    margin-top: 80px; 
-    margin-bottom: 80px; 
+    
+    /* handle vertical and horizontal centering */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    /* streamlined padding to bring sections slightly closer during scrolls */
+    margin: 0;
+    padding: 40px 40px;
+    box-sizing: border-box;
+    position: relative;
+    
+    /* force browser to render layer cleanly without scrolling lag */
+    will-change: transform;
     
     .studioContent {
         display: grid;
-        grid-template-columns: 1.2fr 1fr; /* Side-by-side on desktop */
+        grid-template-columns: 1.2fr 1fr; 
         gap: 60px;
+        width: 100%;
         max-width: 1200px;
         margin: 0 auto;
-        padding: 0 40px;
-        align-items: start;
+        align-items: center; 
     }
 
     .textContainer {
         display: flex;
         flex-direction: column;
-        gap: 30px; /* Perfectly gaps paragraphs and buttons */
+        gap: 30px; 
     }
 
-    /* --- NEW HEADER ROW LOGIC --- */
-    /* This completely protects your text by keeping the headers in their own structural box */
     .title-wrapper {
         display: flex;
         flex-direction: column;
@@ -36,17 +48,17 @@ const StudioStyle = styled.div`
     h1, h2 {
         color: var(--mainColor);
         margin: 0;
-        font-size: clamp(50px, 7.5vw, 110px); /* Smooth responsive sizing */
+        font-size: clamp(50px, 7.5vw, 110px); 
         line-height: 0.9;
         font-family: 'Playfair Display', serif;
     }
 
     h1 {
-        align-self: flex-start; /* Aligns "Ambiance" to the left */
+        align-self: flex-start; 
     }
 
     h2 {
-        align-self: flex-end; /* Staggers "Studio" beautifully to the right */
+        align-self: flex-end; 
         position: relative;
         padding-bottom: 10px;
     }
@@ -61,7 +73,6 @@ const StudioStyle = styled.div`
         right: 0;
     }
 
-    /* --- PARAGRAPHS & CONTENT --- */
     p {
         font-family: 'Inter', sans-serif;
         color: var(--mainColor);
@@ -113,10 +124,11 @@ const StudioStyle = styled.div`
 
     /* --- RESPONSIVE MOBILE BREAKPOINT --- */
     @media (max-width: 992px) {
-        margin-top: 40px;
+        min-height: auto;
+        padding: 40px 24px;
 
         .studioContent {
-            grid-template-columns: 1fr; /* Stacks image top, text bottom */
+            grid-template-columns: 1fr; 
             gap: 40px;
         }
 
@@ -129,11 +141,11 @@ const StudioStyle = styled.div`
         }
 
         h1, h2 {
-            font-size: clamp(45px, 10vw, 75px); /* Slightly tighter headers on mobile views */
+            font-size: clamp(45px, 10vw, 75px); 
         }
         
         h2::after {
-            width: 50%; /* Shortens the underline accent cleanly on screens */
+            width: 50%; 
         }
 
         p {
@@ -147,7 +159,6 @@ function Studio(props) {
         <StudioStyle>
             <div className="studioContent">
                 <div className="textContainer">
-                    {/* The wrapper safely stacks headings without absolute positioning collisions */}
                     <div className="title-wrapper">
                         <h1>Ambiance</h1>
                         <h2>Studio</h2>
