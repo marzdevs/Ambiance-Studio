@@ -2,6 +2,7 @@
 
 # Ambiance Studio is a studio agency website where I used React and Sass, showcasing interior designs with images from Midjourney.
 
+([Live Demo](https://ambiancestudio.netlify.app/))
 
 # Hero Section
 ![ambiance1](https://github.com/marzdevs/Ambiance-Studio/assets/18634603/5e5b3482-70f0-4e2d-8109-59bfd7e264b4)
