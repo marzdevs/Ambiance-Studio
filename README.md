@@ -1,8 +1,25 @@
-# React + Vite + Sass
-
-# Ambiance Studio is a studio agency website where I used React and Sass, showcasing interior designs with images from Midjourney.
+Ambiance Studio
+A modern, high-end agency website built to showcase interior design concepts. This project focuses on immersive UI/UX, responsive design, and smooth transitions.
 
 ([Live Demo](https://ambiancestudio.netlify.app/))
+
+🚀 Key Features
+Immersive Hero: Designed to capture user attention instantly with high-fidelity visuals.
+
+Responsive Layout: Fully optimized for all device sizes, ensuring a seamless experience from mobile to desktop.
+
+Modern Styling: Utilizes Sass for clean, modular CSS architecture and maintainable code.
+
+Smooth UI/UX: Interactive panels and clean transitions for a premium "studio" feel.
+
+🛠 Tech Stack
+Frontend: React, Vite
+
+Styling: Sass (SCSS)
+
+Deployment: Netlify
+
+Assets: Original design concepts created via Midjourney.
 
 # Hero Section
 ![ambiance1](https://github.com/marzdevs/Ambiance-Studio/assets/18634603/5e5b3482-70f0-4e2d-8109-59bfd7e264b4)
