@@ -3,7 +3,7 @@ A modern, high-end agency website built to showcase interior design concepts. Th
 
 ([Live Demo](https://ambiancestudio.netlify.app/))
 
-🚀 Key Features
+# 🚀 Key Features
 Immersive Hero: Designed to capture user attention instantly with high-fidelity visuals.
 
 Responsive Layout: Fully optimized for all device sizes, ensuring a seamless experience from mobile to desktop.
@@ -12,7 +12,7 @@ Modern Styling: Utilizes Sass for clean, modular CSS architecture and maintainab
 
 Smooth UI/UX: Interactive panels and clean transitions for a premium "studio" feel.
 
-🛠 Tech Stack
+# 🛠 Tech Stack
 Frontend: React, Vite
 
 Styling: Sass (SCSS)
