@@ -146,7 +146,7 @@ const Container = styled.div`
 function Footer() {
   return (
     <Container>
-        {/* Contact links row styled beautifully with clear segments */}
+        
         <div className="footer-info-row">
             <div className="info-block">
                 <h3>Inquiries</h3>

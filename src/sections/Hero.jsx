@@ -11,7 +11,7 @@ const HeroStyle = styled.div`
     grid-template-columns: 1.4fr 1fr; 
     gap: 40px;
     
-    /* CHANGE THIS: Centers the paragraph vertically against the two-line header block */
+    /* Centers the paragraph vertically against the two-line header block */
     align-items: center; 
 
     .hero-titles {
@@ -27,7 +27,7 @@ const HeroStyle = styled.div`
         font-weight: 400;
     }
 
-    /* CHANGER THIS: Premium typography adjustments for clean reading */
+    /* Premium typography adjustments for clean reading */
     p {
         margin: 0;
         font-family: 'Inter', sans-serif;
