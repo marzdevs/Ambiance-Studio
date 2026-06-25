@@ -22,17 +22,16 @@ Deployment: Netlify
 Assets: Original design concepts created via Midjourney.
 
 # Hero Section
-![ambiance1](https://github.com/marzdevs/Ambiance-Studio/assets/18634603/5e5b3482-70f0-4e2d-8109-59bfd7e264b4)
-![asdfasgasdg](https://github.com/marzdevs/Ambiance-Studio/assets/18634603/154fe038-7e02-43c7-b5d9-f8609e1be689)
+![ambiance1](./hero.png)
 
 # Studio Section
-![ambianc2](https://github.com/marzdevs/Ambiance-Studio/assets/18634603/5a161738-7cf2-43ee-aff1-49968f41f3c3)
+![ambianc2](./studio.png)
 
 # Panel Section
-![ambiance 3](https://github.com/marzdevs/Ambiance-Studio/assets/18634603/b9a44135-f0de-4854-93cc-b03c98f32ae9)
+![ambiance 3](./panel.png)
 
 # Footer Section
-![aklsjdghasdg](https://github.com/marzdevs/Ambiance-Studio/assets/18634603/7f0c28e8-f733-4e14-bf9a-8a91b31d6bd5)
+![footer](./footer.png)
 
 ## Getting Started
 1. Clone the repo: `git clone https://github.com/marzdevs/Ambiance-Studio.git`
